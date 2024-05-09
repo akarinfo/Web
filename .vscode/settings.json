@@ -1,0 +1,6 @@
+{
+    "workbench.editor.wrapTabs": false,
+    "notebook.output.wordWrap": false,
+    "editor.renderFinalNewline": "on",
+    "editor.wordWrap": "on"
+}
