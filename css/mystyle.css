@@ -134,13 +134,13 @@ margin:auto;
     font-family: Inter;
     font-size: 16px;
     font-weight: 900;
-    line-height: 0px;
+    line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
 }
 .h4sh:hover{
     color:#a8b1b9;
-    font-size:larger;
+    text-decoration:underline;
 
 }
 
