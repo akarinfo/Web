@@ -1,0 +1,71 @@
+* {
+    font-family:"inter",arial,sans-serif;
+}
+
+div {
+    /* border: 0.1px solid rgb(255, 182, 182); */
+}
+:root {
+    --moes1:#83909B; /* 自定义颜色 */
+    --moes2: #c3ad8b;
+    --ms-deeper:#252a36;
+}
+
+.square {
+    aspect-ratio: 1/1;
+}
+.t-b-0 {
+    font-weight: 600;
+}
+.t-b-1 {
+    font-weight: 700;
+}
+.t-b-2 {
+    font-weight: 800;
+}
+.t-b-3 {
+    font-weight: 900;
+}
+.h2s {
+    font-size:1.5rem;
+}
+.title-size-1 {
+    font-size: 1.5rem;
+}
+.title-size-2 {
+    font-size: 1.4rem;
+}
+.title-size-3 {
+    font-size: 1.3rem;
+}
+.para-size-1 {
+    font-size: 1rem;
+}
+.para-size-2 {
+    font-size: 0.9rem;
+}
+.para-size-3 {
+    font-size: 0.8rem;
+}
+.para-sub {
+    font-size: 1rem;
+    color:gray;
+}
+.list-normal {
+    line-height: 1.5rem;
+}
+.t-footer {
+    font-weight: 600;
+    color: #4d61a1;
+}
+.t-menu {
+    font-weight: 800;
+    color: var(--moes1);
+}
+
+.nav-link {
+    color:var(--moes1); /* 更改字体颜色为蓝色 */
+  }
+.nav-link:hover {
+    color:var(--moes2); /* 更改鼠标悬停时的字体颜色为绿色 */
+  }
