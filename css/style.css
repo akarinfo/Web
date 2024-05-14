@@ -69,3 +69,41 @@ div {
 .nav-link:hover {
     color:var(--moes2); /* 更改鼠标悬停时的字体颜色为绿色 */
   }
+
+
+.col {
+    padding: 0;
+    overflow: hidden;
+}
+
+.col ul {
+    font-size: 0;
+    white-space:nowrap;
+    padding: 0;
+    margin: 0px;
+}
+
+.col ul li {
+    margin: 0%;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+}
+
+.col ul li img {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .col ul li {
+       width:33.3%;
+    }
+}
+
+#thumbnail {
+    width: 75%;
+}
+
+.selected {
+    border:1px solid #252a36
+}
