@@ -51,6 +51,41 @@ div {
     font-size: 1rem;
     color:gray;
 }
+
+.dt-shipping {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: 600;
+    color: var(--ms-deeper);
+}
+
+.dt-calculated {
+    padding-left: 1rem;
+    font-size: smaller;
+    color: var(--moes1);
+}
+
+.dt-price {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--moes2);
+    line-height: calc(100%);
+}
+.dt-price-old {
+    margin: 1rem;
+    font-weight: 400;
+    line-height: calc();
+    font-size: 1rem;
+    text-decoration-line: line-through;
+}
+
+.dt-price-off {
+    color: red;
+    font-weight: 800;
+    line-height: calc();
+    font-size: 1rem;
+}
+
 .list-normal {
     line-height: 1.5rem;
 }
@@ -106,4 +141,63 @@ div {
 
 .selected {
     border:1px solid #252a36
+}
+
+.modal {
+   position: relative;
+}
+.modal-content {
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.show {
+    display:flex;
+}
+
+
+.dt-style-options {
+    display: flex;
+}
+.bg-label {
+    border-radius: 8px;
+    width:25%;
+    text-align: center;
+    padding-right:1rem;
+    padding-left:1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#White:checked + .bg-label{
+    background-color: var(--moes2);
+    color: white;
+}
+
+#Black:checked + .bg-label{
+    background-color: var(--moes2);
+    color: white;
+}
+#TRV:checked + .bg-label{
+    background-color: var(--moes2);
+    color: white;
+}
+#Zigbee:checked + .bg-label{
+    background-color: var(--moes2);
+    color: white;
+}
+#Multi-Mode:checked + .bg-label{
+    background-color: var(--moes2);
+    color: white;
+}
+
+.dt-sub-title {
+    color:grey;
+}
+
+.bg-label>text {
+    font-weight: 900;
 }

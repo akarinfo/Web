@@ -42,3 +42,23 @@ imageContainer.forEach( li=> {
 }
 
 )
+
+// shipping 模态框呼出
+
+// JavaScript
+document.addEventListener('DOMContentLoaded', (event) => {
+    const modal = document.getElementById("modal");
+    const modalContent = document.getElementById("modal-content");
+    const modalClose = document.getElementById('modal-close');
+
+    modal.addEventListener("click", () => {
+        modalContent.classList.toggle("show");
+    });
+
+    modalClose.addEventListener('click',(event)=>{
+        event.stopPropagation();
+        modalContent.classList.remove("show");
+    })
+
+});
+    
