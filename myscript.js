@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const modalContent = document.getElementById("modal-content");
     const modalClose = document.getElementById('modal-close');
 
+
     modal.addEventListener("click", () => {
         modalContent.classList.toggle("show");
     });

@@ -164,12 +164,13 @@ div {
 }
 .bg-label {
     border-radius: 8px;
-    width:25%;
     text-align: center;
     padding-right:1rem;
     padding-left:1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #White:checked + .bg-label{
@@ -200,4 +201,111 @@ div {
 
 .bg-label>text {
     font-weight: 900;
+}
+
+.btn-addcart {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:var(--moes2);
+    border: none;
+    font-weight: 600;
+    color: white;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5rem;
+    padding:0.5rem;
+}
+
+.paypal {
+    padding: 0px;
+    background-color: #FFC520;
+    width: 100%;
+    height: auto;
+}
+
+.btn-paypal{
+    background-color: unset;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.inputbox-buy {
+    width:100%;
+    border:none;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+}
+
+.li-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    padding: 1rem;
+    margin: 0px;
+}
+
+@media screen and (max-width:765px) {
+    .li-list{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+}
+
+.li-list img {
+    margin: auto;
+    display: flex;
+    padding-right: 1rem;
+}
+
+.li-list p{
+    margin: 0;
+}
+
+.li-item {
+    display: flex;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:765px) {
+    .li-item{
+        display: block;
+    }
+    .li-list img {
+        padding: 0rem;
+    }
+    
+}
+
+.twig-bottom img {
+    border-radius: 20px;
+}
+
+.twig-text {
+    font-size: 0.9rem;
+    color: var(--moes1);
+}
+
+.img-left {
+
+   
+}
+
+.img-right{
+ 
+    display: flex;
+    flex-direction: column;
+    padding-left:30px ;
+    align-content: space-around;
+}
+
+.img-right img {
+    padding-top: 1rem;
 }
