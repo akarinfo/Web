@@ -2,9 +2,6 @@
     font-family:"inter",arial,sans-serif;
 }
 
-div {
-    /* border: 0.1px solid rgb(255, 182, 182); */
-}
 :root {
     --moes1:#83909B; /* 自定义颜色 */
     --moes2: #c3ad8b;
@@ -289,12 +286,14 @@ div {
 }
 
 .twig-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--moes1);
+    line-height: 1.5rem;
 }
 
-.img-left {
-
+.img-left img {
+    width: 100%;
+    height: auto;
    
 }
 
@@ -302,10 +301,87 @@ div {
  
     display: flex;
     flex-direction: column;
-    padding-left:30px ;
-    align-content: space-around;
+    padding-left:85px ;
+    align-content: space-between;
 }
 
 .img-right img {
-    padding-top: 1rem;
+    width: 100%;
+    height: auto;
 }
+
+.img-right img:nth-child(2) {
+    margin-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .img-right{
+        padding: 0px;
+    }
+    .img-right img {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 2rem ;
+    }
+    .img-left {
+        padding: unset;
+    }
+}
+
+.img2-1 div:nth-child(1){
+order: 5;
+}
+
+.img2-1 .img-right {
+    padding-left: 0px;
+    padding-right: 85px;
+}
+
+@media screen and (max-width:768px) {
+    .img2-1 .img-right {
+        padding-right: 0px;
+    }
+}
+
+.caroucel {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #238DA6;
+    overflow: hidden;
+}
+
+.caroucel-item {
+    width: 100%;
+    height: auto;
+}
+
+.caroucel-item img{
+    width: 360px;
+    padding: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .h1 {
+    color: var(--ms-deeper);
+  }

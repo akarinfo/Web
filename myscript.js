@@ -63,3 +63,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 });
     
+
+// 商品数量增加减少
+
+const dash = document.getElementById('purchase-number-minus');
+const plus = document.getElementById('purchase-number-plus');
+const purchaseNumber =document.getElementById('purchase-number')
+const purchaseValue=purchaseNumber.value;
+
+plus.addEventListener('click',() =>{
+    purchaseNumber.value++;
+})
+dash.addEventListener('click',() =>{
+    if(purchaseNumber.value==0){
+
+    }
+    else
+    {purchaseNumber.value--;}
+})
+
