@@ -57,33 +57,40 @@
                 <div class="row ">
                     <div class="col-md" >
                        <div style="position: sticky;top: 0px;">
-                        <div class="row justify-content-center"  >
-                            <img src="img/ZTRV-BY-100-WH-MS-Fr/通用主图.jpg" alt="" class="img-fluid p-3 shadow-sm" id="bigimg">
-                        </div>
-                        <div class="row my-5" >
-                            <div class="col-1 d-flex align-items-center justify-content-center">
-                                <button class="btn shadow-none" type="button" id="button-prev">
-                                    <i class="bi bi-chevron-left"></i></div>
-                                </button>
-                           <div class="col" id="thumbnail">
-                                <ul class="p-0 m-0 ">
-                                    <!-- li之间有回车或者空格会导致图片之间会有一道空白，将ul的font size设置为0可以消除空白 -->
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图1-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图2-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图3-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图4-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图5-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图6-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图7-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图8-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                    <li><img src="img/ZTRV-BY-100-WH-MS-Fr/主图9-thumbnail.jpg" alt="" class="img-fluid"></li>
-                                </ul>
-                           </div>
-                           <div class="col-1 d-flex align-items-center justify-content-center">
-                            <button class="btn shadow-none" type="button" id="button-next">
-                                <i class="bi bi-chevron-right"></i>
-                            </button>
-                           </div>
+                            <div class="row justify-content-center"  >
+                                <img id="bigimg" src="img/ZHT-006/1_GA_white.jpg" alt="" class="img-fluid p-3 shadow-sm" >
+                            </div>
+                            <div class="row my-5" >
+                                <div class="col-1 d-flex align-items-center justify-content-center">
+                                    <button class="btn shadow-none" type="button" id="button-prev">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col" id="thumbnail">
+                                    <ul class="p-0 m-0 ">
+                                        <!-- li之间有回车或者空格会导致图片之间会有一道空白，将ul的font size设置为0可以消除空白 -->
+                                        <li><img src="img/ZHT-006/thumbnail_1_GA_white.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_2.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_3.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_4.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_5.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_6.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_7.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_8.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_9.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_10.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_11.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_12.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_13.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_14.jpg" alt="" class="img-fluid"></li>
+                                        <li><img src="img/ZHT-006/thumbnail_15.jpg" alt="" class="img-fluid"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-1 d-flex align-items-center justify-content-center">
+                                    <button class="btn shadow-none" type="button" id="button-next">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
                         </div>
                        </div>
                     </div>
@@ -142,9 +149,9 @@
                                 Color
                             </div>
                             <div class="dt-style-options m-1">
-                                <input type="radio" name="options" id="White" value="White" hidden checked>
+                                <input type="radio" name="options" id="White" value="White" hidden checked onclick="var bigimg=document.getElementById('bigimg');bigimg.src=bigimg.src.replace(/(?<=G._).+(?=\.)/,'white');var thumbnail =document.querySelector('.col ul li img');thumbnail.src=thumbnail.src.replace(/(?<=G._).+(?=\.)/,'white')">
                                 <label class="bg-label" for="White">White</label>
-                                <input type="radio" name="options" id="Black" value="White" hidden>
+                                <input type="radio" name="options" id="Black" value="Black" hidden onclick="var bigimg=document.getElementById('bigimg');bigimg.src=bigimg.src.replace(/(?<=G._).+(?=\.)/,'black');var thumbnail =document.querySelector('.col ul li img');thumbnail.src=thumbnail.src.replace(/(?<=G._).+(?=\.)/,'black')">
                                 <label class="bg-label" for="Black">Black</label>
                             </div>
                             <div class="dt-sub-title my-1">
@@ -152,11 +159,11 @@
                             </div>
                             <!-- 产品规格 -->
                             <div class="d-flex m-1 flex-wrap ">
-                                    <input type="radio" name="quantitys" id="TRV" value="" hidden checked>
+                                    <input type="radio" name="quantitys" id="TRV" value="" hidden checked onclick="document.getElementById('bigimg').src=document.getElementById('bigimg').src.replace(/G\w/,'GA')">
                                     <label class="bg-label" for="TRV">【GA】ZigBee Water Floor Heating (5A)</label>
-                                    <input type="radio" name="quantitys" id="Zigbee" value="" hidden>
+                                    <input type="radio" name="quantitys" id="Zigbee" value="" hidden onclick="document.getElementById('bigimg').src=document.getElementById('bigimg').src.replace(/G\w/,'GB')">
                                     <label class="bg-label" for="Zigbee">【GB】ZigBee Electric Floor Heating (16A)</label>
-                                    <input  type="radio" name="quantitys" id="Multi-Mode" value="" hidden>
+                                    <input  type="radio" name="quantitys" id="Multi-Mode" value="" hidden onclick="document.getElementById('bigimg').src=document.getElementById('bigimg').src.replace(/G\w/,'GC')">
                                     <label class="bg-label" for="Multi-Mode">【GC】ZigBee Water/Gas Boiler (5A)</label>
                             </div>
                         </section>
@@ -266,7 +273,7 @@
                                     </p>
                                     <div class="accordion-collapse collapse" id="pdf" data-bs-parent="#dt-accordion">
                                         <div class="accordion-body">
-                                            <a href="#" style="text-decoration: none; /* 去除下划线 */
+                                            <a href="PDF/zigbee 006 Series Thermostat (MOES) 英文+德西葡俄法意 Manual DE14-240514_compressed.pdf" style="text-decoration: none; /* 去除下划线 */
                                             color: inherit; /* 继承父元素的文本颜色 */
                                             outline: none; /* 去除点击时的轮廓 */"><img src="https://cdn.shopify.com/s/files/1/0095/4079/6497/files/PDF.png?v=1710924027" alt=""> <span class="mx-4">Download PDF</span></a>
                                         </div>
@@ -325,22 +332,16 @@
                 <div class="swiper mySwiper m-5">
                     <div class="swiper-wrapper">
                        <div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_1_a33ec767-7a04-4dde-b3e6-4cb5a285abd3.jpg?v=1675926179">
-                          </div><div div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_2_4e4ca0bb-a5fe-4da1-8442-d1b436ab060b.jpg?v=1675926192">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_3_24ea1368-d71b-40be-b5e1-0e0e5502b977.jpg?v=1675926207">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_4_b47d2dc6-e410-4672-93ba-c09dadae886a.jpg?v=1675926221">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_6_40bca701-31cb-4a1e-8d68-676f04b3ed2c.jpg?v=1675926246">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_7_4416a30b-1b4b-4143-9aba-b64cff4b56d6.jpg?v=1675926260">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_8_5b1faa41-70aa-4f79-973e-aa7e7fdf629f.jpg?v=1675926275">
-                          </div><div class="swiper-slide">
-                            <img src="//moeshouse.com/cdn/shop/files/A_9_5fb35857-61ba-41ce-84ee-bd20c4518f63.jpg?v=1675926286">
-                          </div>
+                            <img src="img/ZHT-006/7.jpg">
+                        </div>
+                       <div class="swiper-slide">
+                            <img src="img/ZHT-006/5.jpg">
+                        </div>
+                       <div class="swiper-slide">
+                            <img src="img/ZHT-006/8.jpg">
+                        </div>
+                        
+                           
                     
                 </div>
             </div>
@@ -405,17 +406,19 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card shadow-sm">
-                        <img src="img/ZHT-006.png" alt="" class="img-fluid card-img-top">
+                        <a href="BRT-100.html">
+                            <img src="img/BRT-100.jpg" alt="" class="img-fluid card-img-top p-">
+                        </a>
                         <div class="card-body">
-                            <div class="card-title"><p class="t-b-1">ZHT-600<p></div>
+                            <div class="card-title"><p class="t-b-1">BRT-100<p></div>
                             <div class="card-text">
                                 <p>
-                                    Zigbee Thermostat intelligent chauffe-eau/gaz, Thermostat d'ambiance numérique Programmable
+                                    Les vannes de radiateur intelligentes Tuya MOES ZigBee économisent de l'énergie
                                 </p>
                             </div>
                             <div class="card-text t-b-0">
                                 <p class="">
-                                    €65 TTC
+                                    €61 TTC
                                 </p>
                             </div>
                         </div>

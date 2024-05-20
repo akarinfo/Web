@@ -37,7 +37,7 @@ imageContainer.forEach( li=> {
             li=>li.classList.remove('selected')
         )
         this.classList.add('selected')
-        bigimg.src =this.querySelector('img').src.replace('-thumbnail','');
+        bigimg.src =this.querySelector('img').src.replace('thumbnail_','');
     })
 }
 
